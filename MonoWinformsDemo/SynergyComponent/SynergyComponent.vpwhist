@@ -1,0 +1,35 @@
+[Global]
+CurrentProject=SynergyComponent.vpj
+[ProjectDates]
+SynergyComponent.vpj=20100930161633666
+[ActiveConfig]
+SynergyComponent.vpj=Release
+[TreeExpansion2]
+- SynergyComponent.vpj
+  - Source Files
+    - SynergyComponent\Address.cs
+    - SynergyComponent\Address_type.cs
+    - SynergyComponent\AssemblyInfo.cs
+    - SynergyComponent\Contact.cs
+    - SynergyComponent\Customer.cs
+    - SynergyComponent\ISynergyServer.cs
+    - SynergyComponent\Method_status.cs
+    - SynergyComponent\SynergyServer.cs
+  + Batch Files
+  + Other Files
+scroll:0
+[State]
+SCREEN: 1680 1050 225 225 1260 737 0 0 M 0 0 0 0 1437 497 0
+CWD: ..\SynergyComponent
+FILEHIST: 9
+..\..\SPC2010\src\SynergyServer\GetCustomerAddresses.dbl
+..\..\SPC2010\src\SynergyServer\GetContactForUpdate.dbl
+..\..\SPC2010\src\SynergyServer\GetAllCustomers.dbl
+..\..\SPC2010\src\SynergyServer\GetAddressForUpdate.dbl
+..\..\SPC2010\src\SynergyServer\UpdateCustomer.dbl
+..\..\SPC2010\xfpl\LoadSmc.xml
+..\..\SPC2010\xfpl\xfpl.ini
+\TEMP\StvInterop1\StvInterop1\dblnet2xml.in
+SynergyComponent\SynergyServer.cs
+PROJECT_CACHE: 0
+TBCLASS: 0 0

@@ -1,0 +1,72 @@
+﻿using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
+using System.Runtime.Serialization;
+using System.ServiceModel;
+using System.Text;
+
+namespace SilverlightDemo.Web
+{
+    public class SPC2010WcfService : ISPC2010WcfService
+    {
+        public List<Customer> GetCustomers()
+        {
+            ArrayList tmpCustomers = new ArrayList();
+            List<Customer> customers = new List<Customer>();
+
+            spc2010.SynergyServer svr = new spc2010.SynergyServer();
+            svr.GetAllCustomers(ref tmpCustomers);
+
+            foreach (spc2010.Customer tmpCustomer in tmpCustomers)
+                customers.Add(new Customer(tmpCustomer));
+
+            return customers;
+        }
+
+        public List<ContactBrief> GetCustomerContacts(int customerId)
+        {
+            ArrayList tmpContacts = new ArrayList();
+            List<ContactBrief> contacts = new List<ContactBrief>();
+
+            spc2010.SynergyServer svr = new spc2010.SynergyServer();
+            svr.GetCustomerContacts(customerId, ref tmpContacts);
+
+            foreach (spc2010.Contact tmpContact in tmpContacts)
+                contacts.Add(new ContactBrief(tmpContact));
+
+            return contacts;
+        }
+
+        public List<Address> GetCustomerAddresses(int customerId)
+        {
+            ArrayList tmpAddresses = new ArrayList();
+            List<Address> addresses = new List<Address>();
+
+            spc2010.SynergyServer svr = new spc2010.SynergyServer();
+            svr.GetCustomerAddresses(customerId, ref tmpAddresses);
+
+            foreach (spc2010.Address tmpAddress in tmpAddresses)
+                addresses.Add(new Address(tmpAddress));
+
+            return addresses;
+        }
+
+
+        public Contact GetContactForUpdate(int customerId, int contactId, out byte[] grfa)
+        {
+            spc2010.Contact contact = new spc2010.Contact();
+            grfa = new byte[10];
+            string msg = "";
+            spc2010.SynergyServer svr = new spc2010.SynergyServer();
+            if (svr.GetContactForUpdate(customerId, contactId, ref contact, ref grfa, ref msg) == spc2010.Method_status.Success)
+            {
+                return new Contact(contact);
+            }
+            else
+            {
+                return new Contact();
+            }
+        }
+    }
+}

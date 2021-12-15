@@ -1,0 +1,64 @@
+﻿using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.Services;
+
+namespace SilverlightDemo.Web
+{
+    /// <summary>
+    /// Summary description for SPC2010WebService
+    /// </summary>
+    [WebService(Namespace = "http://psg.synergex.com/")]
+    [WebServiceBinding(ConformsTo = WsiProfiles.BasicProfile1_1)]
+    [System.ComponentModel.ToolboxItem(false)]
+    [System.Web.Script.Services.ScriptService]
+    public class SPC2010WebService : System.Web.Services.WebService
+    {
+        [WebMethod(Description = "Returns a collection of all customer ID's and names.")]
+        public List<Customer> GetCustomers()
+        {
+            ArrayList tmpCustomers = new ArrayList();
+            List<Customer> customers = new List<Customer>();
+
+            spc2010.SynergyServer svr = new spc2010.SynergyServer();
+            svr.GetAllCustomers(ref tmpCustomers);
+
+            foreach (spc2010.Customer tmpCustomer in tmpCustomers)
+                customers.Add(new Customer(tmpCustomer));
+
+            return customers;
+        }
+
+        [WebMethod(Description = "Returns a collection of all contacts for a customer.")]
+        public List<Contact> GetCustomerContacts(int customerId)
+        {
+            ArrayList tmpContacts = new ArrayList();
+            List<Contact> contacts = new List<Contact>();
+
+            spc2010.SynergyServer svr = new spc2010.SynergyServer();
+            svr.GetCustomerContacts(customerId, ref tmpContacts);
+
+            foreach (spc2010.Contact tmpContact in tmpContacts)
+                contacts.Add(new Contact(tmpContact));
+
+            return contacts;
+        }
+
+        [WebMethod(Description = "Returns a collection of all addresses for a customer.")]
+        public List<Address> GetCustomerAddresses(int customerId)
+        {
+            ArrayList tmpAddresses = new ArrayList();
+            List<Address> addresses = new List<Address>();
+
+            spc2010.SynergyServer svr = new spc2010.SynergyServer();
+            svr.GetCustomerAddresses(customerId, ref tmpAddresses);
+
+            foreach (spc2010.Address tmpAddress in tmpAddresses)
+                addresses.Add(new Address(tmpAddress));
+
+            return addresses;
+        }
+    }
+}

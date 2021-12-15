@@ -1,0 +1,25 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Runtime.Serialization;
+using System.ServiceModel;
+using System.Text;
+
+namespace SilverlightDemo.Web
+{
+    [ServiceContract]
+    public interface ISPC2010WcfService
+    {
+        [OperationContract]
+        List<Customer> GetCustomers();
+
+        [OperationContract]
+        List<ContactBrief> GetCustomerContacts(int customerId);
+
+        [OperationContract]
+        Contact GetContactForUpdate(int customerId, int contactId, out byte[] grfa);
+
+        [OperationContract]
+        List<Address> GetCustomerAddresses(int customerId);
+    }
+}

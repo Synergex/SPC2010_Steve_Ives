@@ -1,0 +1,72 @@
+[Global]
+CurrentProject=prj\SynergyComponent.vpj
+[ProjectDates]
+prj\SynergyComponent.vpj=20101011192730790
+prj\SynergyServer.vpj=20101011192726470
+prj\SynergyServerTest.vpj=20101011192719691
+[TreeExpansion2]
+- prj\SynergyComponent.vpj
+  - Source Files
+    - src\SynergyComponent\SynergyComponent\Address.cs
+    - src\SynergyComponent\SynergyComponent\Address_type.cs
+    - src\SynergyComponent\SynergyComponent\AssemblyInfo.cs
+    - src\SynergyComponent\SynergyComponent\Contact.cs
+    - src\SynergyComponent\SynergyComponent\Customer.cs
+    - src\SynergyComponent\SynergyComponent\ISynergyServer.cs
+    - src\SynergyComponent\SynergyComponent\Method_status.cs
+    - src\SynergyComponent\SynergyComponent\SynergyServer.cs
+  + Batch Files
+  + Other Files
+- prj\SynergyServer.vpj
+  - Source Files
+    - src\SynergyServer\DataDefinitions.dbl
+    - src\SynergyServer\GetAddressForUpdate.dbl
+    - src\SynergyServer\GetAllCustomers.dbl
+    - src\SynergyServer\GetContactForUpdate.dbl
+    - src\SynergyServer\GetCustomerAddresses.dbl
+    - src\SynergyServer\GetCustomerContacts.dbl
+    - src\SynergyServer\GetCustomerForUpdate.dbl
+    - src\SynergyServer\UpdateContact.dbl
+    - src\SynergyServer\UpdateCustomer.dbl
+  + Header Files
+  + Other Files
+    - xfpl\DefaultSMC.xml
+    - xfpl\LoadDefaultSMC.bat
+    - xfpl\LoadSynergyServerSMC.bat
+    - xfpl\SynergyServerSMC.xml
+    - xfpl\xfpl.ini
++ prj\SynergyServerTest.vpj
+scroll:0
+[State]
+SCREEN: 1600 1200 250 250 1200 850 0 0 M 0 0 0 0 1265 766 0
+CWD: \SPC2010_STEVE\04_MDU\xfpl
+FILEHIST: 1
+\TEMP\select_test\test.dbl
+PROJECT_CACHE: 3
+20101011192730790 8 C:\SPC2010_Steve_Ives\SynergyServer\prj\SynergyComponent.vpj
+..\src\SynergyComponent\SynergyComponent\Address.cs
+..\src\SynergyComponent\SynergyComponent\Address_type.cs
+..\src\SynergyComponent\SynergyComponent\AssemblyInfo.cs
+..\src\SynergyComponent\SynergyComponent\Contact.cs
+..\src\SynergyComponent\SynergyComponent\Customer.cs
+..\src\SynergyComponent\SynergyComponent\ISynergyServer.cs
+..\src\SynergyComponent\SynergyComponent\Method_status.cs
+..\src\SynergyComponent\SynergyComponent\SynergyServer.cs
+20101011192726470 14 C:\SPC2010_Steve_Ives\SynergyServer\prj\SynergyServer.vpj
+..\src\SynergyServer\DataDefinitions.dbl
+..\src\SynergyServer\GetAddressForUpdate.dbl
+..\src\SynergyServer\GetAllCustomers.dbl
+..\src\SynergyServer\GetContactForUpdate.dbl
+..\src\SynergyServer\GetCustomerAddresses.dbl
+..\src\SynergyServer\GetCustomerContacts.dbl
+..\src\SynergyServer\GetCustomerForUpdate.dbl
+..\src\SynergyServer\UpdateContact.dbl
+..\src\SynergyServer\UpdateCustomer.dbl
+..\xfpl\DefaultSMC.xml
+..\xfpl\LoadDefaultSMC.bat
+..\xfpl\LoadSynergyServerSMC.bat
+..\xfpl\SynergyServerSMC.xml
+..\xfpl\xfpl.ini
+20101011192719691 1 C:\SPC2010_Steve_Ives\SynergyServer\prj\SynergyServerTest.vpj
+..\src\SynergyServerTest\SynergyServerTest.dbl
+TBCLASS: 0 0

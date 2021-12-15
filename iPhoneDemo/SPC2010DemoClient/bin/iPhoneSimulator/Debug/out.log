@@ -1,0 +1,6 @@
+APP: Checking for existing database
+APP: Creating new database
+APP: Creating database tables
+APP: Downloading customers from web service
+APP: Inserting customers into database
+APP: 185 customer records were downloaded and stored locally. You can refresh your customer list by clcking the refresh button at the bottom of the customers screen.

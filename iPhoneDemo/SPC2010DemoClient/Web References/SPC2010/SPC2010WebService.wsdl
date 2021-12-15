@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:s0="http://psg.synergex.com/" xmlns:tns="http://psg.synergex.com/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" targetNamespace="http://psg.synergex.com/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xs:schema elementFormDefault="qualified" targetNamespace="http://psg.synergex.com/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:element name="GetCustomers">
+        <xs:complexType />
+      </xs:element>
+      <xs:element name="GetCustomersResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="1" name="GetCustomersResult" type="tns:ArrayOfCustomer" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:complexType name="ArrayOfCustomer">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="Customer" nillable="true" type="tns:Customer" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="Customer">
+        <xs:sequence>
+          <xs:element minOccurs="1" maxOccurs="1" name="CustomerId" type="xs:int" />
+          <xs:element minOccurs="0" maxOccurs="1" name="CustomerName" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="DateCreated" type="xs:dateTime" />
+          <xs:element minOccurs="1" maxOccurs="1" name="DateModified" type="xs:dateTime" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Status" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="GetCustomerContacts">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="1" maxOccurs="1" name="customerId" type="xs:int" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="GetCustomerContactsResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="1" name="GetCustomerContactsResult" type="tns:ArrayOfContact" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:complexType name="ArrayOfContact">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="Contact" nillable="true" type="tns:Contact" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="Contact">
+        <xs:sequence>
+          <xs:element minOccurs="1" maxOccurs="1" name="CustomerId" type="xs:int" />
+          <xs:element minOccurs="1" maxOccurs="1" name="ContactId" type="xs:int" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Salutation" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="FirstName" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="LastName" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="FriendlyName" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="WorkPhone" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="HomePhone" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Email" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Department" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Title" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="GetCustomerAddresses">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="1" maxOccurs="1" name="customerId" type="xs:int" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="GetCustomerAddressesResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="1" name="GetCustomerAddressesResult" type="tns:ArrayOfAddress" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:complexType name="ArrayOfAddress">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="Address" nillable="true" type="tns:Address" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="Address">
+        <xs:sequence>
+          <xs:element minOccurs="1" maxOccurs="1" name="CustomerId" type="xs:int" />
+          <xs:element minOccurs="1" maxOccurs="1" name="AddressId" type="xs:int" />
+          <xs:element minOccurs="0" maxOccurs="1" name="AddressType" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Street" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="City" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="State" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Zip" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="GetContactForUpdate">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="1" maxOccurs="1" name="customerId" type="xs:int" />
+            <xs:element minOccurs="1" maxOccurs="1" name="contactId" type="xs:int" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="GetContactForUpdateResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="1" maxOccurs="1" name="GetContactForUpdateResult" type="tns:Method_status" />
+            <xs:element minOccurs="0" maxOccurs="1" name="contact" type="tns:Contact" />
+            <xs:element minOccurs="0" maxOccurs="1" name="grfa" type="xs:base64Binary" />
+            <xs:element minOccurs="0" maxOccurs="1" name="msg" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:simpleType name="Method_status">
+        <xs:restriction base="xs:string">
+          <xs:enumeration value="Success" />
+          <xs:enumeration value="Info_error" />
+          <xs:enumeration value="Fatal_error" />
+        </xs:restriction>
+      </xs:simpleType>
+      <xs:element name="UpdateContact">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="1" name="contact" type="tns:Contact" />
+            <xs:element minOccurs="0" maxOccurs="1" name="grfa" type="xs:base64Binary" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="UpdateContactResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="1" maxOccurs="1" name="UpdateContactResult" type="tns:Method_status" />
+            <xs:element minOccurs="0" maxOccurs="1" name="contact" type="tns:Contact" />
+            <xs:element minOccurs="0" maxOccurs="1" name="grfa" type="xs:base64Binary" />
+            <xs:element minOccurs="0" maxOccurs="1" name="msg" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:schema>
+  </types>
+  <message name="GetCustomersSoapIn">
+    <part name="parameters" element="tns:GetCustomers" />
+  </message>
+  <message name="GetCustomersSoapOut">
+    <part name="parameters" element="tns:GetCustomersResponse" />
+  </message>
+  <message name="GetCustomerContactsSoapIn">
+    <part name="parameters" element="tns:GetCustomerContacts" />
+  </message>
+  <message name="GetCustomerContactsSoapOut">
+    <part name="parameters" element="tns:GetCustomerContactsResponse" />
+  </message>
+  <message name="GetCustomerAddressesSoapIn">
+    <part name="parameters" element="tns:GetCustomerAddresses" />
+  </message>
+  <message name="GetCustomerAddressesSoapOut">
+    <part name="parameters" element="tns:GetCustomerAddressesResponse" />
+  </message>
+  <message name="GetContactForUpdateSoapIn">
+    <part name="parameters" element="tns:GetContactForUpdate" />
+  </message>
+  <message name="GetContactForUpdateSoapOut">
+    <part name="parameters" element="tns:GetContactForUpdateResponse" />
+  </message>
+  <message name="UpdateContactSoapIn">
+    <part name="parameters" element="tns:UpdateContact" />
+  </message>
+  <message name="UpdateContactSoapOut">
+    <part name="parameters" element="tns:UpdateContactResponse" />
+  </message>
+  <portType name="SPC2010WebServiceSoap">
+    <operation name="GetCustomers">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns a collection of all customer ID's and names.</wsdl:documentation>
+      <input message="tns:GetCustomersSoapIn" />
+      <output message="tns:GetCustomersSoapOut" />
+    </operation>
+    <operation name="GetCustomerContacts">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns a collection of all contacts for a customer.</wsdl:documentation>
+      <input message="tns:GetCustomerContactsSoapIn" />
+      <output message="tns:GetCustomerContactsSoapOut" />
+    </operation>
+    <operation name="GetCustomerAddresses">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns a collection of all addresses for a customer.</wsdl:documentation>
+      <input message="tns:GetCustomerAddressesSoapIn" />
+      <output message="tns:GetCustomerAddressesSoapOut" />
+    </operation>
+    <operation name="GetContactForUpdate">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns a current contact record and its current GRFA</wsdl:documentation>
+      <input message="tns:GetContactForUpdateSoapIn" />
+      <output message="tns:GetContactForUpdateSoapOut" />
+    </operation>
+    <operation name="UpdateContact">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Updates a contact record if it hasn't already been changed by another user</wsdl:documentation>
+      <input message="tns:UpdateContactSoapIn" />
+      <output message="tns:UpdateContactSoapOut" />
+    </operation>
+  </portType>
+  <binding name="SPC2010WebServiceSoap" type="tns:SPC2010WebServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="GetCustomers">
+      <soap:operation soapAction="http://psg.synergex.com/GetCustomers" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="GetCustomerContacts">
+      <soap:operation soapAction="http://psg.synergex.com/GetCustomerContacts" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="GetCustomerAddresses">
+      <soap:operation soapAction="http://psg.synergex.com/GetCustomerAddresses" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="GetContactForUpdate">
+      <soap:operation soapAction="http://psg.synergex.com/GetContactForUpdate" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="UpdateContact">
+      <soap:operation soapAction="http://psg.synergex.com/UpdateContact" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <binding name="SPC2010WebServiceSoap12" type="tns:SPC2010WebServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="GetCustomers">
+      <soap12:operation soapAction="http://psg.synergex.com/GetCustomers" style="document" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+    </operation>
+    <operation name="GetCustomerContacts">
+      <soap12:operation soapAction="http://psg.synergex.com/GetCustomerContacts" style="document" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+    </operation>
+    <operation name="GetCustomerAddresses">
+      <soap12:operation soapAction="http://psg.synergex.com/GetCustomerAddresses" style="document" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+    </operation>
+    <operation name="GetContactForUpdate">
+      <soap12:operation soapAction="http://psg.synergex.com/GetContactForUpdate" style="document" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+    </operation>
+    <operation name="UpdateContact">
+      <soap12:operation soapAction="http://psg.synergex.com/UpdateContact" style="document" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="SPC2010WebService">
+    <port name="SPC2010WebServiceSoap" binding="tns:SPC2010WebServiceSoap">
+      <soap:address location="http://winvm/spc2010/SPC2010WebService.asmx" />
+    </port>
+    <port name="SPC2010WebServiceSoap12" binding="tns:SPC2010WebServiceSoap12">
+      <soap12:address location="http://winvm/spc2010/SPC2010WebService.asmx" />
+    </port>
+  </service>
+</definitions>

@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="3.5" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7D3B8FFE-6D5F-42D7-A8E9-4C7BBAD14BCE}</ProjectGuid>
+    <ProjectTypeGuids>{E613F3A2-FE9C-494F-B74E-F63BCB86FEA6};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>SPC2010DemoClient</RootNamespace>
+    <MainNibFile>MainWindow.xib</MainNibFile>
+    <AssemblyName>SPC2010DemoClient</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <BundleDisplayName>SpcDemo</BundleDisplayName>
+    <BundleIcon>icon.png</BundleIcon>
+    <BundleIdentifier>com.synergex.SPC2010iPhoneDemo</BundleIdentifier>
+    <BundleVersion>1.0</BundleVersion>
+    <BundleIconHigh>icon.png</BundleIconHigh>
+    <MtouchSdkVersion>4.1</MtouchSdkVersion>
+    <MtouchMinimumOS>4.0</MtouchMinimumOS>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchLink>None</MtouchLink>
+    <MtouchDebug>True</MtouchDebug>
+    <MtouchI18n />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <DebugType>none</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchDebug>False</MtouchDebug>
+    <MtouchLink>None</MtouchLink>
+    <MtouchI18n />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Developer: Steve Ives (69KU99P8YP)</CodesignKey>
+    <MtouchDebug>True</MtouchDebug>
+    <MtouchI18n />
+    <CodesignProvision>119BE604-FC8C-4DE6-A83B-AD5CEC8587EC</CodesignProvision>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <DebugType>none</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchDebug>False</MtouchDebug>
+    <CodesignKey>iPhone Developer: Steve Ives (69KU99P8YP)</CodesignKey>
+    <CodesignProvision>119BE604-FC8C-4DE6-A83B-AD5CEC8587EC</CodesignProvision>
+    <MtouchI18n />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="monotouch" />
+    <Reference Include="System" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Mono.Data.Sqlite" />
+    <Reference Include="System.Data" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Info.plist" />
+    <None Include="icon.png" />
+    <None Include="Web References\SPC2010\SPC2010WebService.disco" />
+    <None Include="Web References\SPC2010\SPC2010WebService.wsdl" />
+    <None Include="Web References\SPC2010\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MainWindow.xib.designer.cs">
+      <DependentUpon>MainWindow.xib</DependentUpon>
+    </Compile>
+    <Compile Include="Main.cs" />
+    <Compile Include="CustomerScreen.xib.cs">
+      <DependentUpon>CustomerScreen.xib</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerScreen.xib.designer.cs">
+      <DependentUpon>CustomerScreen.xib</DependentUpon>
+    </Compile>
+    <Compile Include="LocationsScreen.xib.cs">
+      <DependentUpon>LocationsScreen.xib</DependentUpon>
+    </Compile>
+    <Compile Include="LocationsScreen.xib.designer.cs">
+      <DependentUpon>LocationsScreen.xib</DependentUpon>
+    </Compile>
+    <Compile Include="AddressScreen.xib.cs">
+      <DependentUpon>AddressScreen.xib</DependentUpon>
+    </Compile>
+    <Compile Include="AddressScreen.xib.designer.cs">
+      <DependentUpon>AddressScreen.xib</DependentUpon>
+    </Compile>
+    <Compile Include="ContactsScreen.xib.cs">
+      <DependentUpon>ContactsScreen.xib</DependentUpon>
+    </Compile>
+    <Compile Include="ContactsScreen.xib.designer.cs">
+      <DependentUpon>ContactsScreen.xib</DependentUpon>
+    </Compile>
+    <Compile Include="ContactScreen.xib.cs">
+      <DependentUpon>ContactScreen.xib</DependentUpon>
+    </Compile>
+    <Compile Include="ContactScreen.xib.designer.cs">
+      <DependentUpon>ContactScreen.xib</DependentUpon>
+    </Compile>
+    <Compile Include="Util.cs" />
+    <Compile Include="Web References\SPC2010\Reference.cs">
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="OrdersScreen.xib.cs">
+      <DependentUpon>OrdersScreen.xib</DependentUpon>
+    </Compile>
+    <Compile Include="OrdersScreen.xib.designer.cs">
+      <DependentUpon>OrdersScreen.xib</DependentUpon>
+    </Compile>
+    <Compile Include="QuotesScreen.xib.cs">
+      <DependentUpon>QuotesScreen.xib</DependentUpon>
+    </Compile>
+    <Compile Include="QuotesScreen.xib.designer.cs">
+      <DependentUpon>QuotesScreen.xib</DependentUpon>
+    </Compile>
+    <Compile Include="DataSources\CustomersDataSource.cs" />
+    <Compile Include="DataSources\CustomersSearchDelegate.cs" />
+    <Compile Include="AccountScreen.xib.cs">
+      <DependentUpon>AccountScreen.xib</DependentUpon>
+    </Compile>
+    <Compile Include="AccountScreen.xib.designer.cs">
+      <DependentUpon>AccountScreen.xib</DependentUpon>
+    </Compile>
+    <Compile Include="WebBrowser.xib.cs">
+      <DependentUpon>WebBrowser.xib</DependentUpon>
+    </Compile>
+    <Compile Include="WebBrowser.xib.designer.cs">
+      <DependentUpon>WebBrowser.xib</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="MainWindow.xib" />
+    <Page Include="CustomerScreen.xib" />
+    <Page Include="LocationsScreen.xib" />
+    <Page Include="AddressScreen.xib" />
+    <Page Include="ContactsScreen.xib" />
+    <Page Include="ContactScreen.xib" />
+    <Page Include="OrdersScreen.xib" />
+    <Page Include="QuotesScreen.xib" />
+    <Page Include="AccountScreen.xib" />
+    <Page Include="WebBrowser.xib" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ProjectExtensions>
+    <MonoDevelop>
+      <Properties InternalTargetFrameworkVersion="IPhone" />
+    </MonoDevelop>
+  </ProjectExtensions>
+  <ItemGroup>
+    <ProjectReference Include="..\iPhoneUtil\iPhoneUtil.csproj">
+      <Project>{F197416F-17EB-4B66-817F-87AF17B5B6B2}</Project>
+      <Name>iPhoneUtil</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\SPC2010" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="DataSources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://winvm/spc2010/SPC2010WebService.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\SPC2010</RelPath>
+      <UpdateFromURL>http://winvm/spc2010/SPC2010WebService.asmx</UpdateFromURL>
+    </WebReferenceUrl>
+  </ItemGroup>
+</Project>

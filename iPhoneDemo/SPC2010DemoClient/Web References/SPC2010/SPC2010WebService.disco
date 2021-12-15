@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<discovery xmlns:scl="http://schemas.xmlsoap.org/disco/scl/" xmlns="http://schemas.xmlsoap.org/disco/">
+  <scl:contractRef docRef="http://winvm/spc2010/SPC2010WebService.asmx" ref="http://winvm/spc2010/SPC2010WebService.asmx?wsdl" />
+</discovery>

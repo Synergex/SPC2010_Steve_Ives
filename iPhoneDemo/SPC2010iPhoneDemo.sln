@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SPC2010DemoClient", "SPC2010DemoClient\SPC2010DemoClient.csproj", "{7D3B8FFE-6D5F-42D7-A8E9-4C7BBAD14BCE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "iPhoneUtil", "iPhoneUtil\iPhoneUtil.csproj", "{F197416F-17EB-4B66-817F-87AF17B5B6B2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+		Release|iPhone = Release|iPhone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7D3B8FFE-6D5F-42D7-A8E9-4C7BBAD14BCE}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{7D3B8FFE-6D5F-42D7-A8E9-4C7BBAD14BCE}.Debug|iPhone.Build.0 = Debug|iPhone
+		{7D3B8FFE-6D5F-42D7-A8E9-4C7BBAD14BCE}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{7D3B8FFE-6D5F-42D7-A8E9-4C7BBAD14BCE}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{7D3B8FFE-6D5F-42D7-A8E9-4C7BBAD14BCE}.Release|iPhone.ActiveCfg = Release|iPhone
+		{7D3B8FFE-6D5F-42D7-A8E9-4C7BBAD14BCE}.Release|iPhone.Build.0 = Release|iPhone
+		{7D3B8FFE-6D5F-42D7-A8E9-4C7BBAD14BCE}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{7D3B8FFE-6D5F-42D7-A8E9-4C7BBAD14BCE}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+		{F197416F-17EB-4B66-817F-87AF17B5B6B2}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{F197416F-17EB-4B66-817F-87AF17B5B6B2}.Debug|iPhone.Build.0 = Debug|iPhone
+		{F197416F-17EB-4B66-817F-87AF17B5B6B2}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{F197416F-17EB-4B66-817F-87AF17B5B6B2}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{F197416F-17EB-4B66-817F-87AF17B5B6B2}.Release|iPhone.ActiveCfg = Release|iPhone
+		{F197416F-17EB-4B66-817F-87AF17B5B6B2}.Release|iPhone.Build.0 = Release|iPhone
+		{F197416F-17EB-4B66-817F-87AF17B5B6B2}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{F197416F-17EB-4B66-817F-87AF17B5B6B2}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = SPC2010DemoClient\SPC2010DemoClient.csproj
+	EndGlobalSection
+EndGlobal
